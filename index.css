@@ -189,7 +189,8 @@ label.menu-btn {
 	width: 100%;
 	height: 2px;
 	border-radius: 2px;
-	background: white;
+  background: rgb(0, 0, 0);
+  color: black;
 }
 
 .menu-btn .menu:nth-child(2) {
@@ -918,7 +919,8 @@ h2 {
   padding: 5px 10px 5px 25px;
   /* border: 2px  solid rgba(0, 0, 0, 0.5); */
   margin: 0px;
-  font-family: var(--headlinesFont);
+  font-family: 'Balsamiq Sans', cursive;
+  /* font-family: var(--headlinesFont); */
   /* background-color: rgba(255, 255, 255, 0.5); */
 }
 
@@ -1175,8 +1177,8 @@ body {
   margin: 5px 20px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.5);
 }
-.card .text .fa-clock-o {
-  color: #9B9B9B;
+.card .text .fa-clock {
+  color: rgb(126, 126, 126);
   margin: 0 20px;
 }
 .card .text .fa-users {
@@ -1232,8 +1234,8 @@ body {
 }
 
 .icon-img1 {
-	height: 25px;
-	width: 25px;
+	height: 20px;
+	width: 20px;
 	/* margin-right: 10px; */
 	/* margin-bottom: 8px; */
 }
@@ -1316,3 +1318,9 @@ body {
   top: 80px;
 }
 
+/* TEST MODAL */
+.modal-footer i {
+  width: 30%;
+  align-items: center;
+  text-align: center;
+}
