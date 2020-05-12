@@ -1,3 +1,12 @@
+/* PRELOADER */
+
+
+
+
+
+/* PRELOADER END */
+
+
 @import url("https://fonts.googleapis.com/css?family=Josefin+Sans:100,300,400,600,700|Work+Sans:100,200,300,400,500,600");
 :root {
   --headlinesFont: 'Josefin Sans', sans-serif;
@@ -604,7 +613,7 @@ input {
 }
 input[type=search] {
   -webkit-appearance: textfield;
-  -webkit-box-sizing: content-box;
+  /* -webkit-box-sizing: content-box; */
   font-family: inherit;
   font-size: 100%;
 }
@@ -1171,7 +1180,7 @@ body {
 .card .info {
   margin: 10px 20px;
 }
-.card a.btn {
+.card .btn {
   display: block;
   background: #ff4f87;
   color: #fff;
@@ -1183,8 +1192,8 @@ body {
   transition: 250ms;
   border-radius: 0 0 15px 15px;
 }
-.card a.btn:hover {
-  background: #17BEBB;
+.card .btn:hover {
+  background: #fd2d6f;
   transition: 250ms;
 }
 
@@ -1293,5 +1302,5 @@ body {
 }
 
 .modal-content {
-  top: 100px;
+  top: 80px;
 }
