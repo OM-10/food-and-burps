@@ -331,8 +331,8 @@ input:checked + .slider:before {
   }
 
 .img-card-cuisine {
-	height: 100px;
-	width: 100px;
+	height: 90px;
+	width: 90px;
 	border-radius: 50%;
 	transition: transform .2s;
 }  
@@ -345,7 +345,7 @@ input:checked + .slider:before {
 	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 	font-size: 15px;
   color: black;
-  margin: 0px;
+  margin-bottom: 0px;
 	/* white-space: nowrap; */
 	/* overflow: auto; */
 	text-align: center;
@@ -394,6 +394,16 @@ input:checked + .slider:before {
 	color: #ff9800;
 	background-color: #ff9800;
 	border: 0px;
+}
+
+.border3 {
+	height: 7px;
+	width: 80px;
+	background: #ff9800;
+	color: #ff9800;
+	background-color: #ff9800;
+  border: 0px;
+  margin: 0px 0px 15px 25px;
 }
 
 ul {
@@ -723,7 +733,7 @@ height: 100%;
 .parallax1 .carousel-cell
 {
   width: 300px;
-  height: 400px;
+  height: 396px;
   margin-right: 20px;
   border-radius: 10px;
   background: var(--white);
@@ -904,11 +914,12 @@ h2 {
 
 .parallax1 .taste{
   font-size: 35px;
-  padding: 0.2em;
-  border: 2px  solid rgba(0, 0, 0, 0.5);
-  margin-top: 0.2em;
+  height: 50px;
+  padding: 5px 10px 5px 25px;
+  /* border: 2px  solid rgba(0, 0, 0, 0.5); */
+  margin: 0px;
   font-family: var(--headlinesFont);
-  background-color: rgba(255, 255, 255, 0.5);
+  /* background-color: rgba(255, 255, 255, 0.5); */
 }
 
 /*///// phone view/////*/
@@ -1107,10 +1118,10 @@ a {
   font-size: 25px;
   padding: 0.2em;
   color: #000;
-  border: 2px  solid rgba(0, 0, 0, 0.5);
-  margin-top: 0.2em;
+  /* border: 2px  solid rgba(0, 0, 0, 0.5); */
+  margin: 0px;
   font-family: var(--headlinesFont);
-  background-color: rgba(255, 255, 255, 0.5);
+  /* background-color: rgba(255, 255, 255, 0.5); */
 }
 
 
@@ -1304,3 +1315,4 @@ body {
 .modal-content {
   top: 80px;
 }
+
