@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>food&burps</title>
+  <!-- <link rel = "icon" href =  
+"requires a link to display logo in title" 
+        type = "image/x-icon"> -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
+  <!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
+  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    rel="stylesheet"> -->
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+  <link rel="stylesheet" href="flickity.min.css">
+
+  <!-- <link rel="stylesheet" type="text/css" href="I:\Web Design\recipe_mania/index.css"> -->
+
+  
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
+  <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
+  <script src="index.js"></script>
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="index.css">
+  
+</head>
+
+<body>
+  <header>
+
+    <!-- NAVABAR START -->
+    <div class="nav-wrapper">
+
+      <!-- Veg or Nonveg slider in navbar -->
+      <div class="center">
+        <label class="switch">
+          <input type="checkbox">
+          <span class="slider round"></span>
+        </label>
+        <p
+          style="font-size: 10px; margin: 0; font-weight: bold; font-family: Georgia, 'Times New Roman', Times, serif;">
+          Veg Only</p>
+      </div>
+
+      <!-- Contains logo in the center -->
+      <div class="logo-container">
+        <a href="#"><img class="logo" src="images/F&B_logo.jpg" alt="Logo"></a>
+      </div>
+
+      <!-- Hamburger and its contents -->
+      <nav>
+        <input class="hidden" type="checkbox" id="menuToggle">
+        <label class="menu-btn" for="menuToggle">
+          <div class="menu"></div>
+          <div class="menu"></div>
+          <div class="menu"></div>
+        </label>
+        <!-- Slide from right and contents -->
+        <div class="nav-container">
+          <div class="nav-tabs">
+            <ul>
+              <li class="nav-tab">Home</li>
+              <a href="#" target="_blank"><li class="nav-tab">F&b Search</li></a>
+              <li class="nav-tab">Contact</li>
+              <li class="nav-tab">About</li>
+            </ul>
+            <div class="social-tabs">
+              <a href=""><i class="fab fa-instagram"></i></a>
+              <a href=""><i class="fab fa-facebook"></i></a>
+              <a href=""><i class="fab fa-google-plus-square"></i></a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <!-- NAVBAR END -->
+
+  <!-- MAIN CONTENT -->
+
+
+
+
+  <!-- SEARCH BAR START -->
+  <div class="container-search">
+    <h3>What would you like to cook?</h3>
+    <form>
+      <input type="search" placeholder="Search">
+    </form>
+
+    <h4>Popular Searches</h4>
+    <p class="pop-search"><a href="#"><button type="button">Chicken kadai</button></a></p>
+    <p class="pop-search"><a href="#"><button type="button">pav bhaji</button></a></p> <br>
+    <p class="pop-search"><a href="#"><button type="button">dum biryani</button></a></p>
+    <p class="pop-search"><a href="#"><button type="button">misal pav</button></a></p>
+    <p class="pop-search"><a href="#"><button type="button">ginger tea</button></a></p>
+  </div>
+
+  <!-- SEARCH BAR END -->
+
+
+  <!-- GRID SLIDER START -->
+  <section id="Taste-month">
+    <div class="parallax1">
+
+      <p class="taste">Taste of the month...</p>
+
+      <!--Flickity carousel -->
+      <div class="carousel" data-flickity='{ "autoPlay": false, "pageDots": false, "wrapAround": true }'>
+
+
+
+        <!--Card #1-->
+
+
+        <div class="carousel-cell">
+
+          <div class="ft-recipe__thumb">
+            <h3>Today's Featured Recipe</h3><img
+              src="https://zippypaws.com/app/uploads/2018/05/strawberry-waffles-1024x668.jpg" alt="Recipe1" />
+          </div>
+          <div class="ft-recipe__content">
+            <header class="content__header">
+              <div class="row-wrapper">
+                <h2 class="recipe-title">Recipe1</h2>
+                <div class="user-rating"></div>
+              </div>
+              <ul class="recipe-details">
+                <li class="recipe-details-item time"><i class="ion ion-ios-clock-outline"></i><span
+                    class="value">20</span><span class="title">Minutes</span></li>
+                <li class="recipe-details-item ingredients"><i class="ion ion-ios-book-outline"></i><span
+                    class="value">5</span><span class="title">Ingredients</span></li>
+                <li class="recipe-details-item servings"><i class="ion ion-ios-person-outline"></i><span
+                    class="value">4-6</span><span class="title">Serving</span></li>
+              </ul>
+            </header>
+            <p class="description">
+      There’s no better way to celebrate May being National Strawberry </p>
+            <!-- <footer class="content__footer"><a href="#">View Recipe</a></footer> -->
+            <button type="button" class="content__footer" data-toggle="modal" data-target="#modaltest">Open modal</button>
+            
+          </div>
+        </div>
+
+        <!--Card #2-->
+
+
+        <div class="carousel-cell">
+
+          <div class="ft-recipe__thumb">
+            <h3>Today's Featured Recipe</h3><img
+              src="https://zippypaws.com/app/uploads/2018/05/strawberry-waffles-1024x668.jpg" alt="Recipe2" />
+          </div>
+          <div class="ft-recipe__content">
+            <header class="content__header">
+              <div class="row-wrapper">
+                <h2 class="recipe-title">Recipe2</h2>
+                <div class="user-rating"></div>
+              </div>
+              <ul class="recipe-details">
+                <li class="recipe-details-item time"><i class="ion ion-ios-clock-outline"></i><span
+                    class="value">20</span><span class="title">Minutes</span></li>
+                <li class="recipe-details-item ingredients"><i class="ion ion-ios-book-outline"></i><span
+                    class="value">5</span><span class="title">Ingredients</span></li>
+                <li class="recipe-details-item servings"><i class="ion ion-ios-person-outline"></i><span
+                    class="value">4-6</span><span class="title">Serving</span></li>
+              </ul>
+            </header>
+            <p class="description">
+      There’s no better way to celebrate May being National Strawberry </p>
+            <!-- <footer class="content__footer"><a href="#">View Recipe</a></footer> -->
+            <button type="button" class="content__footer" data-toggle="modal" data-target="#modaltest">Open modal</button>
+
+
+          </div>
+        </div>
+
+        <!--Card #3-->
+
+
+        <div class="carousel-cell">
+
+          <div class="ft-recipe__thumb">
+            <h3>Today's Featured Recipe</h3><img
+              src="https://zippypaws.com/app/uploads/2018/05/strawberry-waffles-1024x668.jpg" alt="Recipe3" />
+          </div>
+          <div class="ft-recipe__content">
+            <header class="content__header">
+              <div class="row-wrapper">
+                <h2 class="recipe-title">Recipe3</h2>
+                <div class="user-rating"></div>
+              </div>
+              <ul class="recipe-details">
+                <li class="recipe-details-item time"><i class="ion ion-ios-clock-outline"></i><span
+                    class="value">20</span><span class="title">Minutes</span></li>
+                <li class="recipe-details-item ingredients"><i class="ion ion-ios-book-outline"></i><span
+                    class="value">5</span><span class="title">Ingredients</span></li>
+                <li class="recipe-details-item servings"><i class="ion ion-ios-person-outline"></i><span
+                    class="value">4-6</span><span class="title">Serving</span></li>
+              </ul>
+            </header>
+            <p class="description">
+      There’s no better way to celebrate May being National Strawberry </p>
+            <!-- <footer class="content__footer"><a href="#">View Recipe</a></footer> -->
+            <button type="button" class="content__footer" data-toggle="modal" data-target="#modaltest">Open modal</button>
+
+
+          </div>
+        </div>
+
+
+        <!--Card #4-->
+
+
+        <div class="carousel-cell">
+
+          <div class="ft-recipe__thumb">
+            <h3>Today's Featured Recipe</h3><img
+              src="https://zippypaws.com/app/uploads/2018/05/strawberry-waffles-1024x668.jpg" alt="Recipe4" />
+          </div>
+          <div class="ft-recipe__content">
+            <header class="content__header">
+              <div class="row-wrapper">
+                <h2 class="recipe-title">Recipe4</h2>
+                <div class="user-rating"></div>
+              </div>
+              <ul class="recipe-details">
+                <li class="recipe-details-item time"><i class="ion ion-ios-clock-outline"></i><span
+                    class="value">20</span><span class="title">Minutes</span></li>
+                <li class="recipe-details-item ingredients"><i class="ion ion-ios-book-outline"></i><span
+                    class="value">5</span><span class="title">Ingredients</span></li>
+                <li class="recipe-details-item servings"><i class="ion ion-ios-person-outline"></i><span
+                    class="value">4-6</span><span class="title">Serving</span></li>
+              </ul>
+            </header>
+            <p class="description">
+      There’s no better way to celebrate May being National Strawberry </p>
+            <!-- <footer class="content__footer"><a href="#">View Recipe</a></footer> -->
+            <button type="button" class="content__footer" data-toggle="modal" data-target="#modaltest">Open modal</button>
+
+
+          </div>
+        </div>
+
+        <!--Card #5-->
+
+
+        <div class="carousel-cell">
+
+          <div class="ft-recipe__thumb">
+            <h3>Today's Featured Recipe</h3><img
+              src="https://zippypaws.com/app/uploads/2018/05/strawberry-waffles-1024x668.jpg" alt="Recipe5" />
+          </div>
+          <div class="ft-recipe__content">
+            <header class="content__header">
+              <div class="row-wrapper">
+                <h2 class="recipe-title">Recipe5</h2>
+                <div class="user-rating"></div>
+              </div>
+              <ul class="recipe-details">
+                <li class="recipe-details-item time"><i class="ion ion-ios-clock-outline"></i><span
+                    class="value">20</span><span class="title">Minutes</span></li>
+                <li class="recipe-details-item ingredients"><i class="ion ion-ios-book-outline"></i><span
+                    class="value">5</span><span class="title">Ingredients</span></li>
+                <li class="recipe-details-item servings"><i class="ion ion-ios-person-outline"></i><span
+                    class="value">4-6</span><span class="title">Serving</span></li>
+              </ul>
+            </header>
+            <p class="description">
+      There’s no better way to celebrate May being National Strawberry </p>
+            <!-- <footer class="content__footer"><a href="#">View Recipe</a></footer> -->
+            <button type="button" class="content__footer" data-toggle="modal" data-target="#modaltest">Open modal</button>
+
+
+          </div>
+        </div>
+
+
+        <!--Card #6-->
+
+
+        <div class="carousel-cell">
+
+          <div class="ft-recipe__thumb">
+            <h3>Today's Featured Recipe</h3><img
+              src="https://zippypaws.com/app/uploads/2018/05/strawberry-waffles-1024x668.jpg" alt="Recipe6" />
+          </div>
+          <div class="ft-recipe__content">
+            <header class="content__header">
+              <div class="row-wrapper">
+                <h2 class="recipe-title">Recipe6</h2>
+                <div class="user-rating"></div>
+              </div>
+              <ul class="recipe-details">
+                <li class="recipe-details-item time"><i class="ion ion-ios-clock-outline"></i><span
+                    class="value">20</span><span class="title">Minutes</span></li>
+                <li class="recipe-details-item ingredients"><i class="ion ion-ios-book-outline"></i><span
+                    class="value">5</span><span class="title">Ingredients</span></li>
+                <li class="recipe-details-item servings"><i class="ion ion-ios-person-outline"></i><span
+                    class="value">4-6</span><span class="title">Serving</span></li>
+              </ul>
+            </header>
+            <p class="description">
+      There’s no better way to celebrate May being National Strawberry </p>
+            <!-- <footer class="content__footer"><a href="#">View Recipe</a></footer> -->
+            <button type="button" class="content__footer" data-toggle="modal" data-target="#modaltest">Open modal</button>
+
+
+          </div>
+        </div>
+
+
+        <!--Card #7-->
+
+
+        <div class="carousel-cell">
+
+          <div class="ft-recipe__thumb">
+            <h3>Today's Featured Recipe</h3><img
+              src="https://zippypaws.com/app/uploads/2018/05/strawberry-waffles-1024x668.jpg" alt="Recipe7" />
+          </div>
+          <div class="ft-recipe__content">
+            <header class="content__header">
+              <div class="row-wrapper">
+                <h2 class="recipe-title">Recipe7</h2>
+                <div class="user-rating"></div>
+              </div>
+              <ul class="recipe-details">
+                <li class="recipe-details-item time"><i class="ion ion-ios-clock-outline"></i><span
+                    class="value">20</span><span class="title">Minutes</span></li>
+                <li class="recipe-details-item ingredients"><i class="ion ion-ios-book-outline"></i><span
+                    class="value">5</span><span class="title">Ingredients</span></li>
+                <li class="recipe-details-item servings"><i class="ion ion-ios-person-outline"></i><span
+                    class="value">4-6</span><span class="title">Serving</span></li>
+              </ul>
+            </header>
+            <p class="description">
+      There’s no better way to celebrate May being National Strawberry </p>
+            <!-- <footer class="content__footer"><a href="#">View Recipe</a></footer> -->
+            <button type="button" class="content__footer" data-toggle="modal" data-target="#modaltest">Open modal</button>
+
+
+          </div>
+        </div>
+
+
+
+        <!--Card #8-->
+
+
+        <div class="carousel-cell">
+
+          <div class="ft-recipe__thumb">
+            <h3>Today's Featured Recipe</h3><img
+              src="https://zippypaws.com/app/uploads/2018/05/strawberry-waffles-1024x668.jpg" alt="Recipe8" />
+          </div>
+          <div class="ft-recipe__content">
+            <header class="content__header">
+              <div class="row-wrapper">
+                <h2 class="recipe-title">Recipe8</h2>
+                <div class="user-rating"></div>
+              </div>
+              <ul class="recipe-details">
+                <li class="recipe-details-item time"><i class="ion ion-ios-clock-outline"></i><span
+                    class="value">20</span><span class="title">Minutes</span></li>
+                <li class="recipe-details-item ingredients"><i class="ion ion-ios-book-outline"></i><span
+                    class="value">5</span><span class="title">Ingredients</span></li>
+                <li class="recipe-details-item servings"><i class="ion ion-ios-person-outline"></i><span
+                    class="value">4-6</span><span class="title">Serving</span></li>
+              </ul>
+            </header>
+            <p class="description">
+          There’s no better way to celebrate May being National Strawberry </p>
+            <!-- <footer class="content__footer"><a href="#">View Recipe</a></footer> -->
+            <button type="button" class="content__footer" data-toggle="modal" data-target="#modaltest">Open modal</button>
+
+
+          </div>
+        </div>
+
+
+
+
+      </div>
+      <!-- GRID SLIDER END -->
+
+      <!-- cuisine SLIDER START -->
+
+      <div class="scrollmenu">
+
+        <div class="card2">
+          <img class="img-card-cuisine" src="images/F&B_logo.jpg">
+          <p class="recipe-name-cuisine">INDIAN</p>
+        </div>
+
+        <div class="card2">
+          <img class="img-card-cuisine" src="images/F&B_logo.jpg">
+          <p class="recipe-name-cuisine">SOUTH INDIAN</p>
+        </div>
+
+        <div class="card2">
+          <img class="img-card-cuisine" src="images/F&B_logo.jpg">
+          <p class="recipe-name-cuisine">NORTH INDIAN</p>
+        </div>
+
+        <div class="card2">
+          <img class="img-card-cuisine" src="images/F&B_logo.jpg">
+          <p class="recipe-name-cuisine">ITALIAN</p>
+        </div>
+
+        <div class="card2">
+          <img class="img-card-cuisine" src="images/F&B_logo.jpg">
+          <p class="recipe-name-cuisine">MEXICAN</p>
+        </div>
+
+        <div class="card2">
+          <img class="img-card-cuisine" src="images/F&B_logo.jpg">
+          <p class="recipe-name-cuisine">AFGHAN</p>
+        </div>
+
+        <div class="card2">
+          <img class="img-card-cuisine" src="images/F&B_logo.jpg">
+          <p class="recipe-name-cuisine">BAKED</p>
+        </div>
+
+        <div class="card2">
+          <img class="img-card-cuisine" src="images/F&B_logo.jpg">
+          <p class="recipe-name-cuisine">DRINKS</p>
+        </div>
+
+        <div class="card2">
+          <img class="img-card-cuisine" src="images/F&B_logo.jpg">
+          <p class="recipe-name-cuisine">DESSERTS</p>
+        </div>
+
+        <div class="card2">
+          <img class="img-card-cuisine" src="images/F&B_logo.jpg">
+          <p class="recipe-name-cuisine">BIRYANI</p>
+        </div>
+
+        <div class="card2">
+          <img class="img-card-cuisine" src="images/F&B_logo.jpg">
+          <p class="recipe-name-cuisine">CHINESE</p>
+        </div>
+
+        <div class="card2">
+          <img class="img-card-cuisine" src="images/F&B_logo.jpg">
+          <p class="recipe-name-cuisine">SNACKS</p>
+        </div>
+
+        <div class="card2">
+          <img class="img-card-cuisine" src="images/F&B_logo.jpg">
+          <p class="recipe-name-cuisine">PASTAS</p>
+        </div>
+
+        <div class="card2">
+          <img class="img-card-cuisine" src="images/F&B_logo.jpg">
+          <p class="recipe-name-cuisine">PIZZA</p>
+        </div>
+
+        <div class="card2">
+          <img class="img-card-cuisine" src="images/F&B_logo.jpg">
+          <p class="recipe-name-cuisine">BREAKFAST</p>
+        </div>
+
+        <div class="card2">
+          <img class="img-card-cuisine" src="images/F&B_logo.jpg">
+          <p class="recipe-name-cuisine">SAUCES</p>
+        </div>
+
+        <div class="card2">
+          <img class="img-card-cuisine" src="images/F&B_logo.jpg">
+          <p class="recipe-name-cuisine">PICKLES</p>
+        </div>
+
+        <div class="card2">
+          <img class="img-card-cuisine" src="images/F&B_logo.jpg">
+          <p class="recipe-name-cuisine">BBQ</p>
+        </div>
+      </div>
+
+      <!-- cuisine SLIDER END -->
+
+
+      <!-- EXPLORE RECIPE START -->
+      <section id=cards>
+        <p class="taste" style="margin-top: 25px; background: #fff;">Explore new recipes</p>
+      
+        <div class="other-recipe">
+          
+          <div class="row">
+      
+      
+         <!--Card #1-->
+        <div class="card col-sm-5">
+          <div class="header">
+             <img src="images/Chicken.jpg" class="header">
+          </div>
+          <div class="text">
+             <h2 class="food">Chicken</h2>
+      
+             <i class="fa fa-clock-o"> 15 Mins</i>
+             <i class="fa fa-users"> Serves 2</i>
+             
+             <p class="info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum, temporibus.</p>
+          </div>
+          <a href="#" class="btn">View Recipe</a>
+       </div>
+      
+        <!--Card #2-->
+        <div class="card col-sm-5">
+          <div class="header">
+             <img src="images/Chicken.jpg" class="header">
+          </div>
+          <div class="text">
+             <h2 class="food">Chicken</h2>
+      
+             <i class="fa fa-clock-o"> 15 Mins</i>
+             <i class="fa fa-users"> Serves 2</i>
+             
+             <p class="info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum, temporibus.</p>
+          </div>
+          <a href="#" class="btn">View Recipe</a>
+       </div>
+      
+       <!--Card #3-->
+       <div class="card col-sm-5">
+        <div class="header">
+           <img src="images/Chicken.jpg" class="header">
+        </div>
+        <div class="text">
+           <h2 class="food">Chicken</h2>
+      
+           <i class="fa fa-clock-o"> 15 Mins</i>
+           <i class="fa fa-users"> Serves 2</i>
+           
+           <p class="info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum, temporibus.</p>
+        </div>
+        <a href="#" class="btn">View Recipe</a>
+      </div>
+      
+      <!--Card #4-->
+      <div class="card col-sm-5">
+        <div class="header">
+           <img src="images/Chicken.jpg" class="header">
+        </div>
+        <div class="text">
+           <h2 class="food">Chicken</h2>
+      
+           <i class="fa fa-clock-o"> 15 Mins</i>
+           <i class="fa fa-users"> Serves 2</i>
+           
+           <p class="info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum, temporibus.</p>
+        </div>
+        <a href="#" class="btn">View Recipe</a>
+      </div>
+      
+      <!--Card #5-->
+      <div class="card col-sm-5">
+        <div class="header">
+           <img src="images/Chicken.jpg" class="header">
+        </div>
+        <div class="text">
+           <h2 class="food">Chicken</h2>
+      
+           <i class="fa fa-clock-o"> 15 Mins</i>
+           <i class="fa fa-users"> Serves 2</i>
+           
+           <p class="info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum, temporibus.</p>
+        </div>
+        <a href="#" class="btn">View Recipe</a>
+      </div>
+      
+      <!--Card #6-->
+      <div class="card col-sm-5">
+        <div class="header">
+           <img src="images/Chicken.jpg" class="header">
+        </div>
+        <div class="text">
+           <h2 class="food">Chicken</h2>
+      
+           <i class="fa fa-clock-o"> 15 Mins</i>
+           <i class="fa fa-users"> Serves 2</i>
+           
+           <p class="info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum, temporibus.</p>
+        </div>
+        <a href="#" class="btn">View Recipe</a>
+      </div>
+      
+      <!--Card #7-->
+      <div class="card col-sm-5">
+        <div class="header">
+           <img src="images/Chicken.jpg" class="header">
+        </div>
+        <div class="text">
+           <h2 class="food">Chicken</h2>
+      
+           <i class="fa fa-clock-o"> 15 Mins</i>
+           <i class="fa fa-users"> Serves 2</i>
+           
+           <p class="info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum, temporibus.</p>
+        </div>
+        <a href="#" class="btn">View Recipe</a>
+      </div>
+      
+      <!--Card #8-->
+      <div class="card col-sm-5">
+        <div class="header">
+           <img src="images/Chicken.jpg" class="header">
+        </div>
+        <div class="text">
+           <h2 class="food">Chicken</h2>
+      
+           <i class="fa fa-clock-o"> 15 Mins</i>
+           <i class="fa fa-users"> Serves 2</i>
+           
+           <p class="info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum, temporibus.</p>
+        </div>
+        <a href="#" class="btn">View Recipe</a>
+      </div>
+      
+    
+      
+      
+      </div>
+      
+      
+      </div>
+      </section>
+    </div>
+  </section>
+      <!-- EXPLORE RECIPE END -->
+
+      <!-- FOOTER START -->
+      
+
+      <div class="footer">
+        <div class="inner-footer">
+
+          <div class="footer-items">
+            <h1>Food and Burps</h1>
+            <p>Food and Burps is here for all the foodies to help them make their favourite dishes.</p>
+          </div>
+
+          <div class="footer-items">
+            <h3>Quick Links</h3>
+            <div class="border1"></div>
+            <ul>
+              <a href="">
+                <li>Home</li>
+              </a>
+              <a href="">
+                <li>F&B Search</li>
+              </a>
+              <a href="">
+                <li>Contact</li>
+              </a>
+              <a href="">
+                <li>About</li>
+              </a>
+            </ul>
+          </div>
+
+          <div class="footer-items">
+            <h3>Recipes</h3>
+            <div class="border1"></div>
+            <ul>
+              <a href="">
+                <li>Indian</li>
+              </a>
+              <a href="">
+                <li>Chinese</li>
+              </a>
+              <a href="">
+                <li>Mexican</li>
+              </a>
+              <a href="">
+                <li>Italian</li>
+              </a>
+            </ul>
+          </div>
+
+          <div class="footer-items">
+            <h3>Contact us</h3>
+            <div class="border1"></div>
+            <ul>
+              <li><i class="fa fa-map-marker" style="width: 10px;" aria-hidden="true"></i>XYZ, Montreal, CANADA</li>
+              <li><i class="fa fa-phone" style="width: 10px;" aria-hidden="true"></i>+919029537518</li>
+              <li><i class="fa fa-envelope" style="width: 10px;" aria-hidden="true"></i>foodandburps@gmail.com</li>
+            </ul>
+            <div class="social-media">
+              <a href=""><i class="fab fa-instagram"></i></a>
+              <a href=""><i class="fab fa-facebook"></i></a>
+              <a href=""><i class="fab fa-google-plus-square"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          Copyright &copy; Food and Burps 2020.
+        </div>
+      </div>
+
+
+<!-- MODAL ID START HERE FOR ALL RECEIPE -->
+
+
+
+<!-- modal test -->
+
+  <!-- The Modal -->
+  <div class="modal" id="modaltest">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <img class="img-modal" src="images/F&B_logo.jpg" alt="receipe1">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+    <div class="modal-body">
+        <h1>Recipe1</h1>
+              <h2>Ingredients</h2>
+              <div class="border2"></div>
+                <ul>
+                  <li>ingredient 1</li>
+                  <li>ingredient 2</li>
+                </ul>
+              <h2>Procedure</h2>  
+              <div class="border2"></div>
+              <ol>
+                <li><span>01</span><p>some procedure to make your recipe delicious</p></li>
+                <li><span>02</span><p>some procedure to make your recipe delicious</p></li>
+                <li><span>03</span><p>some procedure to make your recipe delicious</p></li>
+              </ol>  
+            </div>
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <img class="icon-img1" src="images/nonveg_icon.png">
+              <i style="font-size: 20px;" class="fas fa-heart"></i>    
+              <i style="font-size: 20px;" class="fa">&#xf017;</i>   
+              <i>xx min</i> 
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  
+</div>
+
+
+
+      <!-- JAVASCRIPT -->
+
+      <script src="index.js"></script>
+</body>
+
+</html>

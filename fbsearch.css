@@ -1,0 +1,232 @@
+/* FB SEARCH */
+
+.body {
+    position: relative;
+    display: flex;
+     flex-wrap: wrap;
+     display: inline;
+}
+
+ul#myMenu {
+    text-align: center;
+    padding-left: 40%;
+}
+
+.container input:checked ~ .checkmark {
+    opacity: 0.5;
+  }
+
+.container-fbsearch-1 {
+    background-color: rgb(31, 30, 24);
+    text-align: center;
+    height: 300px;
+    width: 23%;
+    padding-top: 20px;
+    margin: 110px 5% 20px 7%;
+    overflow: auto;
+}
+
+.container-fbsearch-2 {
+    background-color: rgb(7, 17, 71);
+    text-align: center;
+    height: 300px;
+    width: 30%;
+    padding-top: 20px;
+    margin: 110px 0px 20px 0px;
+    overflow: auto;
+}
+
+.container-fbsearch-3 {
+    background-color: rgb(226, 52, 61);
+    text-align: center;
+    height: 300px;
+    width: 23%;
+    padding-top: 20px;
+    margin: 110px 7% 20px 5%;
+    overflow: auto;
+}
+
+.container-fbsearch-4 {
+    background-color: rgb(218, 50, 196);
+    text-align: center;
+    height: 200px;
+    width: 27%;
+    padding-top: 20px;
+    margin: 20px 5% 20px 4.5%;
+    overflow: auto;
+}
+
+.container-fbsearch-5 {
+    background-color: rgb(209, 190, 83);
+    text-align: center;
+    height: 200px;
+    width: 27%;
+    padding-top: 20px;
+    margin: 20px 0px 20px 0px;
+    overflow: auto;
+}
+
+.container-fbsearch-6 {
+    background-color: rgb(66, 231, 88);
+    text-align: center;
+    height: 200px;
+    width: 27%;
+    padding-top: 20px;
+    margin: 20px 4.5% 20px 5%;
+    overflow: auto;
+}
+
+
+
+
+
+/* TEST */
+label.container {
+    display: block;
+    position: relative;
+    padding: 10px 0px 0px 35px;
+    margin: 10px 0px 0px 0px;
+    cursor: pointer;
+    text-align: center;
+    width: 20%;
+    height: 30px;
+    font-size: 12px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Hide the browser's default checkbox */
+  .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  /* Create a custom checkbox */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 30px;
+    width: 30px;
+    background-color: #eee;
+    transition: transform 0.2s ease;
+    padding: 0px;
+  }
+  
+ .checkmark:hover {
+     transform: scale(1.1);
+
+ }
+
+
+ /* TEST MEDIA SCREEN */
+
+ @media screen and (max-width: 1100px) {
+	
+    .container-fbsearch-1 {
+        width: 50%;
+        margin: 10px 0px;
+        text-align: center;
+        top: 410px;
+        position: absolute;
+        left: 0;
+    }
+    .container-fbsearch-2 {
+        width: 100%;
+        margin: 10px 0px;
+        text-align: center;
+        top: 110px;
+        position: absolute;
+    }
+    .container-fbsearch-3 {
+        width: 50%;
+        margin: 10px 0px;
+        text-align: center;
+        top: 410px;
+        position: absolute;
+        right: 0;
+    }
+    .container-fbsearch-4 {
+        width: 33.3%;
+        margin: 10px 0px;
+        text-align: center;
+        top: 710px;
+        left: 0;
+        position: absolute;
+    }
+    .container-fbsearch-5 {
+        width: 33.3%;
+        margin: 10px 0px;
+        text-align: center;
+        top: 710px;
+        position: absolute;
+    }
+    .container-fbsearch-6 {
+        width: 33.3%;
+        margin: 10px 0px;
+        text-align: center;
+        top: 710px;
+        position: absolute;
+        right: 0;
+    }
+    .footer {
+        position: absolute;
+        top: 930px;
+    }
+}  
+
+@media screen and (max-width: 660px) {
+	
+    .container-fbsearch-1 {
+        width: 100%;
+        text-align: center;
+        top: 365px;
+        position: absolute;
+        height: 250px;
+    }
+    .container-fbsearch-2 {
+        width: 100%;
+        margin: 10px 0px;
+        text-align: center;
+        top: 110px;
+        position: absolute;
+        height: 250px;
+    }
+    .container-fbsearch-3 {
+        width: 100%;
+        text-align: center;
+        top: 620px;
+        position: absolute;
+        height: 250px;
+    }
+    .container-fbsearch-4 {
+        width: 100%;
+        text-align: center;
+        top: 875px;
+        height: 250px;
+        position: absolute;
+    }
+    .container-fbsearch-5 {
+        width: 100%;
+        text-align: center;
+        top: 1130px;
+        height: 250px;
+        position: absolute;
+    }
+    .container-fbsearch-6 {
+        width: 100%;
+        text-align: center;
+        top: 1385px;
+        height: 250px;
+        position: absolute;
+    }
+    .footer {
+        position: absolute;
+        top: 1640px;
+    }
+}  

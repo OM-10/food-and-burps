@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>food&burps</title>
+  <!-- <link rel = "icon" href =  
+"requires a link to display logo in title" 
+        type = "image/x-icon"> -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+  integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="index.css">
+  <link rel="stylesheet" type="text/css" href="fbsearch.css">  
+ 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="fbsearch.js"></script>
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <script src="http://code.jquery.com/jquery-latest.js"></script>
+  <script type="text/javascript">
+$(document).ready(function(){
+    $('.chkbx').click(function(){
+        var text="";
+        $('.chkbx:checked').each(function(){
+            text+=$(this).val()+',';
+        });
+        text=text.substring(0,text.length-1);
+        $('#selectedtext').val(text);
+        var count = $("[type='checkbox']:checked").length;
+        $('#count').val($("[type='checkbox']:checked").length);
+    });
+});
+
+    </script>
+</head>
+
+<body>
+  <header>
+
+<!-- NAVABAR START -->
+    <div class="nav-wrapper">
+
+      <!-- Veg or Nonveg slider in navbar -->
+      <div class="center">
+        <label class="switch">
+          <input type="checkbox">
+          <span class="slider round"></span>
+        </label>
+        <p style="font-size: 10px; margin: 0; font-weight: bold; font-family: Georgia, 'Times New Roman', Times, serif;">Veg Only</p>
+      </div>
+
+      <!-- Contains logo in the center -->
+      <div class="logo-container">
+        <a href="#"><img class="logo" src="F&B_logo.jpg" alt="Logo"></a>
+      </div>
+
+      <!-- Hamburger and its contents -->
+      <nav>
+        <input class="hidden" type="checkbox" id="menuToggle">
+        <label class="menu-btn" for="menuToggle">
+          <div class="menu"></div>
+          <div class="menu"></div>
+          <div class="menu"></div>
+        </label>
+        <!-- Slide from right and contents -->
+        <div class="nav-container">
+          <div class="nav-tabs">
+            <ul>
+              <li class="nav-tab">Home</li>
+              <li class="nav-tab">F&b Search</li>
+              <li class="nav-tab">Contact</li>
+              <li class="nav-tab">About</li>
+            </ul>
+            <div class="social-tabs">
+              <a href=""><i class="fab fa-instagram"></i></a>
+              <a href=""><i class="fab fa-facebook"></i></a>
+              <a href=""><i class="fab fa-google-plus-square"></i></a>
+            </div>
+          </div>    
+        </div>
+      </nav>
+    </div>
+  </header>
+<!-- NAVBAR END -->
+
+<!-- F&B SEARCH START -->
+
+<!-- <div class="container-fbsearch">
+    <textarea type="text" id="selectedtext" placeholder="ingredients name" readonly></textarea> <br>
+    <input type="text" id="count" placeholder="ingredient count" readonly> <br> <hr>
+
+    <input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search.." title="Type in a category">
+<ul id="myMenu">
+    <li><a><label class="container">One
+        <input type="checkbox" class="chkbx" value="Z" >
+        <span class="checkmark"><img src="recipe2.jpg" style="height: 30px; width: 30px;"> </span>  
+    </label></a></li>
+    <li><a><label class="container">Two
+        <input type="checkbox" class="chkbx" value="Z" >
+        <span class="checkmark"><img src="recipe2.jpg" style="height: 30px; width: 30px;"> </span>  
+    </label></a></li>
+    <li><a><label class="container">Three
+        <input type="checkbox" class="chkbx" value="Z" >
+        <span class="checkmark"><img src="recipe2.jpg" style="height: 30px; width: 30px;"> </span>  
+    </label></a></li>
+    <li><a><label class="container">Four
+        <input type="checkbox" class="chkbx" value="Z" >
+        <span class="checkmark"><img src="recipe2.jpg" style="height: 30px; width: 30px;"> </span>  
+    </label></a></li>
+    <li><a><label class="container">Five
+        <input type="checkbox" class="chkbx" value="Z" >
+        <span class="checkmark"><img src="recipe2.jpg" style="height: 30px; width: 30px;"> </span>  
+    </label></a></li>
+    <li><a><label class="container">Six
+        <input type="checkbox" class="chkbx" value="Z" >
+        <span class="checkmark"><img src="recipe2.jpg" style="height: 30px; width: 30px;"> </span>  
+    </label></a></li>
+    <li><a><label class="container">Seven
+        <input type="checkbox" class="chkbx" value="Z" >
+        <span class="checkmark"><img src="recipe2.jpg" style="height: 30px; width: 30px;"> </span>  
+    </label></a></li>
+
+</ul>
+</div> -->
+
+
+
+
+<!-- ACTUAL START -->
+
+<div class="inner-footer">
+<!-- VEGETABLES -->
+<div class="container-fbsearch-1">
+    <div class="searchbox">
+        <input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search.." title="Type in a category">
+<ul id="myMenu">
+    <li><a><label class="container">Tomato
+        <input type="checkbox" class="chkbx" value="Tomato" >
+        <span class="checkmark"><img src="recipe2.jpg" style="height: 30px; width: 30px;"> </span>  
+    </label></a></li>
+    <li><a><label class="container">Potato
+        <input type="checkbox" class="chkbx" value="Potato" >
+        <span class="checkmark"><img src="recipe2.jpg" style="height: 30px; width: 30px;"> </span>  
+    </label></a></li>
+    <li><a><label class="container">Brinjal
+        <input type="checkbox" class="chkbx" value="Brinjal" >
+        <span class="checkmark"><img src="recipe2.jpg" style="height: 30px; width: 30px;"> </span>  
+    </label></a></li>
+    <li><a><label class="container">Cucumber
+        <input type="checkbox" class="chkbx" value="Cucumber" >
+        <span class="checkmark"><img src="recipe2.jpg" style="height: 30px; width: 30px;"> </span>  
+    </label></a></li>
+    <li><a><label class="container">Carrot
+        <input type="checkbox" class="chkbx" value="Carrot" >
+        <span class="checkmark"><img src="recipe2.jpg" style="height: 30px; width: 30px;"> </span>  
+    </label></a></li>
+    <li><a><label class="container">Onion
+        <input type="checkbox" class="chkbx" value="Onion" >
+        <span class="checkmark"><img src="recipe2.jpg" style="height: 30px; width: 30px;"> </span>  
+    </label></a></li>
+    <li><a><label class="container">Beet root
+        <input type="checkbox" class="chkbx" value="Beet root" >
+        <span class="checkmark"><img src="recipe2.jpg" style="height: 30px; width: 30px;"> </span>  
+    </label></a></li>
+
+</ul>
+    </div>
+</div>
+
+<!-- SEARCH MENU -->
+<div class="container-fbsearch-2">
+    <textarea type="text" id="selectedtext" placeholder="ingredients name" readonly></textarea> <br>
+    <input type="text" id="count" placeholder="ingredient count" readonly>
+</div>
+
+<!-- CEREALS AND PULSES -->
+<div class="container-fbsearch-3">
+    <div class="searchbox">
+        <input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search.." title="Type in a category">
+<ul id="myMenu">
+    <li><a><label class="container">One
+        <input type="checkbox" class="chkbx" value="Z" >
+        <span class="checkmark"><img src="recipe2.jpg" style="height: 30px; width: 30px;"> </span>  
+    </label></a></li>
+    <li><a><label class="container">Two
+        <input type="checkbox" class="chkbx" value="Z" >
+        <span class="checkmark"><img src="recipe2.jpg" style="height: 30px; width: 30px;"> </span>  
+    </label></a></li>
+</ul>        
+    </div>
+</div>
+
+<!-- BAKERY AND DAIRY PRODUCTS -->
+<div class="container-fbsearch-4">
+    <div class="searchbox">
+        <input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search.." title="Type in a category">
+<ul id="myMenu">
+    <li><a><label class="container">One
+        <input type="checkbox" class="chkbx" value="Z" >
+        <span class="checkmark"><img src="recipe2.jpg" style="height: 30px; width: 30px;"> </span>  
+    </label></a></li>
+    <li><a><label class="container">Two
+        <input type="checkbox" class="chkbx" value="Z" >
+        <span class="checkmark"><img src="recipe2.jpg" style="height: 30px; width: 30px;"> </span>  
+    </label></a></li>
+    <li><a><label class="container">Four
+        <input type="checkbox" class="chkbx" value="Z" >
+        <span class="checkmark"><img src="recipe2.jpg" style="height: 30px; width: 30px;"> </span>  
+    </label></a></li>
+    <li><a><label class="container">Five
+        <input type="checkbox" class="chkbx" value="Z" >
+        <span class="checkmark"><img src="recipe2.jpg" style="height: 30px; width: 30px;"> </span>  
+    </label></a></li>
+</ul>        
+    </div>
+</div>
+
+<!-- MEAT -->
+<div class="container-fbsearch-5">
+    <div class="searchbox">
+        <input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search.." title="Type in a category">
+<ul id="myMenu">
+    <li><a><label class="container">One
+        <input type="checkbox" class="chkbx" value="Z" >
+        <span class="checkmark"><img src="recipe2.jpg" style="height: 30px; width: 30px;"> </span>  
+    </label></a></li>
+    <li><a><label class="container">Two
+        <input type="checkbox" class="chkbx" value="Z" >
+        <span class="checkmark"><img src="recipe2.jpg" style="height: 30px; width: 30px;"> </span>  
+    </label></a></li>
+</ul>        
+    </div>
+</div>
+
+<!-- GRAINS -->
+<div class="container-fbsearch-6">
+    <div class="searchbox">
+        <input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search.." title="Type in a category"> 
+<ul id="myMenu">
+    <li><a><label class="container">Oneasdfghjk
+        <input type="checkbox" class="chkbx" value="Z" >
+        <span class="checkmark"><img src="recipe2.jpg" style="height: 30px; width: 30px;"> </span>  
+    </label></a></li>
+    <li><a><label class="container">Two
+        <input type="checkbox" class="chkbx" value="Z" >
+        <span class="checkmark"><img src="recipe2.jpg" style="height: 30px; width: 30px;"> </span>  
+    </label></a></li>
+    <li><a><label class="container">Oneasdfghjk
+        <input type="checkbox" class="chkbx" value="Z" >
+        <span class="checkmark"> </span>  
+    </label></a></li>
+    <li><a><label class="container">Two
+        <input type="checkbox" class="chkbx" value="Z" >
+        <span class="checkmark"><img src="recipe2.jpg" style="height: 30px; width: 30px;"> </span>  
+    </label></a></li>
+    <li><a><label class="container">Oneasdfghjk
+        <input type="checkbox" class="chkbx" value="Z" >
+        <span class="checkmark"><img src="recipe2.jpg" style="height: 30px; width: 30px;"> </span>  
+    </label></a></li>
+    <li><a><label class="container">Two
+        <input type="checkbox" class="chkbx" value="Z" >
+        <span class="checkmark"><img src="recipe2.jpg" style="height: 30px; width: 30px;"> </span>  
+    </label></a></li>
+    <li><a><label class="container">Oneasdfghjk
+        <input type="checkbox" class="chkbx" value="Z" >
+        <span class="checkmark"><img src="recipe2.jpg" style="height: 30px; width: 30px;"> </span>  
+    </label></a></li>
+    <li><a><label class="container">Two
+        <input type="checkbox" class="chkbx" value="Z" >
+        <span class="checkmark"><img src="recipe2.jpg" style="height: 30px; width: 30px;"> </span>  
+    </label></a></li>
+    <li><a><label class="container">Oneasdfghjk
+        <input type="checkbox" class="chkbx" value="Z" >
+        <span class="checkmark"><img src="recipe2.jpg" style="height: 30px; width: 30px;"> </span>  
+    </label></a></li>
+    <li><a><label class="container">Two
+        <input type="checkbox" class="chkbx" value="Z" >
+        <span class="checkmark"><img src="recipe2.jpg" style="height: 30px; width: 30px;"> </span>  
+    </label></a></li>
+</ul>        
+    </div>
+</div>
+
+<!-- END -->
+</div>
+
+
+</footer> -->
+
+<div class="footer">
+  <div class="inner-footer">
+
+    <div class="footer-items">
+      <h1>Food and Burps</h1>
+      <p>Food and Burps is here for all the foodies to help them make their favourite dishes.</p>
+    </div>
+
+    <div class="footer-items">
+      <h3>Quick Links</h3>
+      <div class="border1"></div>
+        <ul>
+          <a href=""><li>Home</li></a>
+          <a href=""><li>F&B Search</li></a>
+          <a href=""><li>Contact</li></a>
+          <a href=""><li>About</li></a>
+        </ul>
+    </div>
+
+    <div class="footer-items">
+      <h3>Recipes</h3>
+      <div class="border1"></div>
+        <ul>
+          <a href=""><li>Indian</li></a>
+          <a href=""><li>Chinese</li></a>
+          <a href=""><li>Mexican</li></a>
+          <a href=""><li>Italian</li></a>
+        </ul>
+    </div>
+
+    <div class="footer-items">
+      <h3>Contact us</h3>
+      <div class="border1"></div>
+        <ul>
+          <li><i class="fa fa-map-marker" aria-hidden="true"></i>XYZ, Montreal, CANADA</li>
+          <li><i class="fa fa-phone" aria-hidden="true"></i>+919029537518</li>
+          <li><i class="fa fa-envelope" aria-hidden="true"></i>foodandburps@gmail.com</li>
+        </ul> 
+        <div class="social-media">
+          <a href=""><i class="fab fa-instagram"></i></a>
+          <a href=""><i class="fab fa-facebook"></i></a>
+          <a href=""><i class="fab fa-google-plus-square"></i></a>
+        </div> 
+    </div>
+  </div>
+  <div class="footer-bottom">
+    Copyright &copy; Food and Burps 2020.
+  </div>
+</div>
+
+<!-- SCRIPT FOR SEARCH -->
+<script>
+    function myFunction() {
+      var input, filter, ul, li, a, i;
+      input = document.getElementById("mySearch");
+      filter = input.value.toUpperCase();
+      ul = document.getElementById("myMenu");
+      li = ul.getElementsByTagName("li");
+      for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+          li[i].style.display = "";
+        } else {
+          li[i].style.display = "none";
+        }
+      }
+    }
+    
+</script>
+
+
+</body>
+</html>
