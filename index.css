@@ -20,13 +20,21 @@
 }
 
 
+body {
+  height: 100%;
+  width: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+
 .h1-header {
 	margin: 20px 0;
 	font-size: 30px;
 	color: black;
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
 	padding-left: 0px 20px;
-	font-weight: bold;
+	font-weight: bold
 	text-align: center;
 	background-color: #ffd28d;
 }
@@ -727,8 +735,9 @@ height: 100%;
     position: inherit;
     top: 100vh;
     background: rgba(255, 255, 255, 0.97);
+    border-top: 5px solid rgba(181, 184, 183, 0.822);
     padding: 10px;
-    margin-top: 100px;
+    margin-top: 120px;
 }
 
 .parallax1 .carousel-cell
@@ -943,12 +952,13 @@ body {
   font-family: var(--bodyFont);
   color: var(--textColor);
   line-height: 1.5;
-
+  overflow: hidden;
+  overflow-x: hidden;
 }
 
-* {
+/* * {
   box-sizing: inherit;
-}
+} */
 
 img {
   vertical-align: text-bottom;
@@ -1324,3 +1334,32 @@ body {
   align-items: center;
   text-align: center;
 }
+
+/* TEST ANIMATION */
+
+/* The typing effect */
+@keyframes typing {
+  from { max-width: 0 }
+  to { max-width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange }
+}
+.typewriter h3 {
+  color: #fff;
+  width: auto;
+  display: inline-block;
+  font-family: monospace;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .03em; /* Adjust as needed */
+  animation: 
+    typing 5s steps(30, end),
+    blink-caret .8s step-end infinite;
+}
+

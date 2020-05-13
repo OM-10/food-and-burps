@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>fbsearch</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+        integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="search.css">
+    <script src="search.js"></script>
+</head>
+
+<body>
+
+
+    <div class="container">
+        <div id="fruits" class="select-menu select-menu--multiple enable-add d-flex flex-column mb-3"
+            data-form="fruitForm" type="checkbox">
+            <select class="mb-3" multiple>
+                <option value="1">Apple</option>
+                <option value="2">Apricot</option>
+                <option value="3">Avocado</option>
+                <option value="4">Blackberry</option>
+                <option value="5">Blueberry</option>
+                <option value="6">Raspberry</option>
+                <option value="7">Cherry</option>
+                <option value="8">Dragon Fruit</option>
+                <option value="9">Grape</option>
+                <option value="10">Kiwi</option>
+            </select>
+            <label class="mb-1">What fruits would you like?</label>
+        </div>
+        <div class="clearfix">
+            <button data-menu="fruits" class="btn-primary submit-btn" type="button" class="btn btn-primary"
+                style="float: right;">Confirm</button>
+        </div>
+
+        <div class="float-form w-100">
+            <form id="fruitForm" action="#">
+                <div class="form-group">
+                    <label>Fruit Value</label>
+                    <input type="text" class="form-control" name="option_value" placeholder="Enter value..">
+                </div>
+
+                <div class="form-group">
+                    <label>Fruit Name</label>
+                    <input type="text" class="form-control" name="option_text" placeholder="Enter name...">
+                </div>
+
+                <div class="d-flex justify-content-end w-100">
+                    <button type="button" class="btn-outline-secondary cancel-btn mr-2">Cancel</button>
+                    <button type="button" class="btn-primary submit-btn">Create</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+    <script src="search.js"></script>
+</body>
+
+</html>
