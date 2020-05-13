@@ -19,14 +19,20 @@
   --black: #000;
 }
 
+html {
+  box-sizing: border-box;
+}
 
 body {
   height: 100%;
   width: 100%;
-  overflow-y: scroll;
+  background: var(--bodyBg);
+  font-family: var(--bodyFont);
+  color: var(--textColor);
+  line-height: 1.5;
+  /* overflow: hidden; */
   overflow-x: hidden;
 }
-
 
 .h1-header {
 	margin: 20px 0;
@@ -943,18 +949,6 @@ h2 {
 /*//card css//*/
 
 
-html {
-  box-sizing: border-box;
-}
-
-body {
-  background: var(--bodyBg);
-  font-family: var(--bodyFont);
-  color: var(--textColor);
-  line-height: 1.5;
-  overflow: hidden;
-  overflow-x: hidden;
-}
 
 /* * {
   box-sizing: inherit;
