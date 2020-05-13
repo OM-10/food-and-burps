@@ -466,7 +466,7 @@ li i {
 	text-align: center;
 }
 
-@media screen and (max-width: 1275px) {
+@media screen and (max-width: 1025px) {
 	.footer-items {
 		width: 50%;
 	}
@@ -474,7 +474,7 @@ li i {
 @media screen and (max-width: 660px) {
 	.footer-items {
 		width: 100%;
-	}
+  }
 }
 
 /* SOCIAL IN TABS NAVBAR */
